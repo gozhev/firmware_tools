@@ -8,3 +8,4 @@ rm my_squashfs.bin
 mksquashfs /mnt/my_squashfs my_squashfs.bin -comp xz -b 32768
 dd if=my_squashfs.bin of=my_dump.bin seek=7936 conv=notrunc
 flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=32768 -w my_dump.bin -c "GD25Q127C/GD25Q128C"
+./uenvmod my_bootenv.txt my_bootenv.bin 10000

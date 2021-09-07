@@ -1,0 +1,16 @@
+bootargs=console=ttyS0,115200 root=/dev/ram0 KRN_PRT=pri mdio_intf=<NULL> phy_addr=1 mac=4c:f5:dc:8b:81:b8 rst_flag=0 bld_rev=1230782 flash_type=spinor flash_size=16MB dram_size=64MB devtype=0x24233 chip_id=0x53 trspt_mode=0x0 burn_mode=0x0 debug=9 dbg=<NULL>
+bootcmd=loadk; bootm
+bootdelay=1
+baudrate=115200
+stdin=serial
+stdout=serial
+stderr=serial
+ipaddr=192.168.1.66
+netmask=255.255.255.0
+serverip=192.168.1.128
+gatewayip=192.168.1.1
+phymode=RMII
+phy_addr=1
+ethaddr=4c:f5:dc:8b:81:b8
+ethact=asx0
+
